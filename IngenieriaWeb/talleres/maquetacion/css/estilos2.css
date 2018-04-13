@@ -1,0 +1,74 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background: #f1f1f1f1;
+	font-family: arial;
+}
+
+.nomb, .buscar, .galeria, .noticia, .sponsors, footer {
+	background: #96B32C;
+	color: #000;
+}
+.centro{
+	text-align: center;
+	display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+header .nomb, header .buscar {
+	float: left;
+	width: 49.6%;
+	height: 50px;
+}
+
+.nav {
+	background: #FF9400;
+	color: #000;
+	height: 30px;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.galeria {
+	width: 100%;
+	height: 200px;
+}
+
+aside {
+	width: 100%;
+	display: inline-block;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+aside section {
+	float: left;
+	width: 19.4%;
+	height: 80px;
+	margin-right: 8px;
+}
+
+header, main {
+	width: 100%;
+	display: inline-block;
+}
+main article {
+	float: left;
+	width: 49.6%;
+	height: 220px;
+}
+header .nomb, main .noticiaA {
+	margin-right: 10px;
+}
+
+footer {
+	margin-top: 1em;
+}
+footer h6{
+	padding: 2em 0em;
+}
+
