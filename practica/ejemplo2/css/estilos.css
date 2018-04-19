@@ -144,9 +144,13 @@ footer h6 {
 }
 
 /*PARA CELULARES*/
-@media only screen and(max-width: 480px){
-	body {
-		background: red;
-		
+@media screen and (max-width: 480px){
+	.tipodetalle, .serviciodetalle {
+		display: block;
+		width: 100%;
+		margin-bottom: 1em;
 	}
+
 }
+
+/*PARA TABLES 800PX*/
