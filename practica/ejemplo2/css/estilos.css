@@ -142,3 +142,11 @@ footer {
 footer h6 {
 	padding: 3em 0;
 }
+
+/*PARA CELULARES*/
+@media only screen and(max-width: 480px){
+	body {
+		background: red;
+		
+	}
+}
