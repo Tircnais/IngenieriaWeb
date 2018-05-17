@@ -1,0 +1,70 @@
+$azul: rgb(30, 165, 255);
+$verde: rgb(25, 192, 19);
+$rojo: rgb(221, 11, 11);
+$gris: rgb(243, 240, 240);
+$blanco: #ffff;
+$negro: rgb(90, 87, 87);
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background-color: $gris;
+}
+
+#cabecera {
+    background-color: $blanco;
+    height: 12em;
+    .menu {
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        img {
+            height: 3em;
+        }
+        section {
+            display: inline-block;
+            
+        }
+        ul {
+            float: right;
+            list-style: none;
+            padding: 1em;
+            li {
+                display: inline;
+                a {
+                    padding: 2em;
+                    text-decoration: none;
+                    color: $negro;
+                }
+            }
+        }
+    }
+}
+
+#derecha {
+    float: right;
+    padding: 2em;
+}
+
+#izquierda {
+    float: left;
+    padding: 2em;
+}
+
+.social {
+    padding: 2em;
+    img {
+        padding: .5em;
+        height: 2em;
+    }
+}
+
+.contacto {
+    float: right;
+    padding: 2em;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+}

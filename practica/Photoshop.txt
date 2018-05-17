@@ -1,0 +1,24 @@
+comando usadas
+
+Ctr + Q (difuminacion +-)
+Ctr + U (saturacion)
+Ctr + T (cambia el amcho)
+Ctr + T + Shit (cambios de dimensiones)
+
+>>>GUARDAR para la WEB (pestaña optimizada)
+	Calidad (85-100) no menos del 85
+	-En Archivo o Exportar
+
+Formato PNG-24 (para efectos sobre el texto)
+Formato FUENTE PSD (para guardar todo... TODO el historial de trabajo de Photoshop)
+FUENTES es posible desacargar
+
+IMAGE
+	>>Auto contraste, tono, color
+	>>Modo >Escala de grises
+
+PARA WEB trabajar con colores RGB (tonos mas realistas de impresión)
+
+Unir capas
+Edición > Fusionar capas automáticamente (Ctrl + E)
+

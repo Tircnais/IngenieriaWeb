@@ -1,0 +1,71 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f3f0f0;
+}
+
+#cabecera {
+  background-color: #ffff;
+  height: 12em;
+}
+
+#cabecera .menu {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+#cabecera .menu img {
+  height: 3em;
+}
+
+#cabecera .menu section {
+  display: inline-block;
+}
+
+#cabecera .menu ul {
+  float: right;
+  list-style: none;
+  padding: 1em;
+}
+
+#cabecera .menu ul li {
+  display: inline;
+}
+
+#cabecera .menu ul li a {
+  padding: 2em;
+  text-decoration: none;
+  color: #5a5757;
+}
+
+#derecha {
+  float: right;
+  padding: 2em;
+}
+
+#izquierda {
+  float: left;
+  padding: 2em;
+}
+
+.social {
+  padding: 2em;
+}
+
+.social img {
+  padding: .5em;
+  height: 2em;
+}
+
+.contacto {
+  float: right;
+  padding: 2em;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+}
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Formularios con PHP</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Formulario con PHP">
+	<meta name="keykords" charset="formulario, PHP">
+	<meta name="autor" content="UTPL by @ceaguirre6">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="shortcut icon" type="image/x-icon" href="images/utpl.jpg">
+	<!--img en la pestaña-->
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/icons.css">	
+
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Cookie|Dancing+Script|Great+Vibes|Handlee|Indie+Flower|Jura|Kaushan+Script|Kavivanar|Lobster|Marck+Script|Pacifico|Sacramento|Satisfy|Shadows+Into+Light" rel="stylesheet">
+</head>
+<body>
+    <header>
+		<h1>Formulario de Registro <span class="slogan">with PHP</span></h1>
+	</header>
+	<main>
+        <section class="fila fondo">
+            <section class="sectform">
+                <form method="POST" action="internas/calcular_factura.php">
+                    <section class="cliente">
+                        <h2>Ingrese sus datos</h2>
+                        <center><input type="text" placeholder="nombres" name="nombres" size="20" required><br></center> 
+                        <center><input type="text" placeholder="apellidos" name="apellidos" size="20"><br></center>
+                        <center><input type="text" placeholder="telefono" name="telefono" size="20"><br></center>
+                        <center><input type="number" placeholder="cedula" name="cedula" maxlength="10" required><br></center>
+                        <center><input class="center" type="date" placeholder="Fecha de nacimiento" name="fecha_nacimiento"><br></center>
+                        <section class="tipouser">
+                            <center><select name="tipo" style="width:145px" required>
+                                <option>Tipo de Usuario</option>
+                                <option value="1">Profesor</option>
+                                <option value="2">Estudiante</option>
+                                <option value="3">Externo</option>
+                            </select></center>
+                        </section>
+                    </section>
+                    <section class="actividades fuente1">
+                        <setcion class="loscursos">
+                            <select name="curso" class="centerv2 centerh">
+                                <option>Seleccione un curso</option>
+                                <option value="JAVA">JAVA</option>
+                                <option value="ANDROID">Android</option>
+                                <option value="PHP">PHP</option>
+                            </select><br>
+                        </setcion>
+                        <section class="lostalleres centerv2 centerh">
+                            <br><label for="">Talleres:</label><br>
+                            <input type="checkbox" name="talleres[]" value="HTML" />HTML<br>
+                            <input type="checkbox" name="talleres[]" value="CSS" />CSS<br>
+                            <input type="checkbox" name="talleres[]" value="Visualizacion" />Visualización<br>
+                            <input type="checkbox" name="talleres[]" value="Cocina" />Cocina<br>
+                        </section>
+                    </section>
+                    <button class="fuente2 btnguardar centerv2 centerh"><span class="icon-checkmark"></span>Guardar</button>
+                </form>
+            </section>
+        </section>
+	</main>
+</body>
+</html>

@@ -98,12 +98,41 @@ h2 {
 	border-radius: 10px;
 	box-shadow: 2px 2px 2px #333; 
 }
+
+.databasedetalle {
+    widows: 25%;
+    background: #333;
+    display: inline-block;
+    color: #f3f3f3;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #333;
+    margin-bottom: 10px;
+}
+.databasedetalle h3 {
+    font-family: 'Josefin Slab';
+    text-align: center;
+}
+.databasedetalle h3:hover {
+    color: skyblue;
+    text-shadow: 5px 5px 2px black;
+    font-family: cursive;
+}
+.databasedetalle img {
+    width: 100%;
+    transition: 0.5s ease-in-out;
+}
+.databasedetalle img:hover {
+    transform: 0.5s ease-in-out;
+    transform: scale(1.3);
+}
+
 .serviciodetalle img, .tipodetalle img {
 	width: 100%;
 	transition: .5s ease-in-out;
 	/*efecto para salida y entrada 0.5s*/
 	border-radius: 10px 10px 0 0;
 }
+
 .tipodetalle h3 {
 	padding: 0.5em 0;
 	text-align: center;
@@ -126,10 +155,10 @@ h2 {
 .serviciodetalle h3, .serviciodetalle p {
 	padding: 1em;
 }
-.serviciodetalle h3 {
+.serviciodetalle h3, databasedetalle h3 {
 	text-align: center;
 }
-.serviciodetalle p {
+.serviciodetalle p, databasedetalle p {
 	font-size: 0.8em;
 }
 
@@ -150,7 +179,175 @@ footer h6 {
 		width: 100%;
 		margin-bottom: 1em;
 	}
-
+    
+    main {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .serviciodetalle, .serviciodetalle {
+        width: 100%;
+    }
+    
+    header {
+        text-align: center;
+    }
+    
+    header h1 span.slogan {
+	    font-size: 0.6em;
+        color: #CCC;
+    }
+    
+    nav	{
+        width: 70%;
+    }
+    
+    nav:hover a {
+        text-shadow: 0px 0px 10px #FFF;
+        color: transparent;
+    }
+    /*se difumina el NAV*/
+    nav a:hover {
+        background: transparent;
+        text-shadow: 1px 1px 10px rgba(71, 80, 23, 0.6);
+        color: #C4D85A;
+    }
+    
+    .serviciodetalle h3, .tipodetalle h3, .databasedetalle h3 {
+        text-align: center;
+    }
+    .serviciodetalle p, .serviciodetalle p, .databasedetalle p {
+        text-align: justify;
+    }
+    
+    .databasedetalle {
+        widows: 100%;
+        background: #333;
+        display: inline-block;
+        color: #f3f3f3;
+        text-align: justify;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px #333;
+        margin-bottom: 10px;
+    }
+    .databasedetalle h3 {
+        font-family: 'Josefin Slab';
+    }
+    .databasedetalle img {
+        width: 100%;
+    }
+    .databasedetalle img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;      
+    }
 }
 
 /*PARA TABLES 800PX*/
+@media screen and (max-width: 800px) {
+	* {
+		padding: 0;
+		margin: 0;
+	}
+
+	html, body {
+		background: #F2f2f2;
+		height: 100%;
+		font-family: arial;
+	}
+
+	nav	{
+		width: 80%;
+		float: right;
+		margin-right: 3em;
+		background: rgba(255, 255, 255, 0.4);
+	}
+
+	nav a {
+		display: inline-block;
+		/*aki nos muestra uno bajo otro x el float*/
+		color: #FFF;
+		text-decoration: none;
+		/*quita las lineas bajo la tag a*/
+		text-shadow: 2px 2px 3px #000;
+		/*Sombra al texto*/
+		font-size: 1.2em;
+		padding: 5px 10px;
+		letter-spacing: 1px;
+		/*espacio entre letras*/
+		transition: all 0.4s ease-in-out;
+		/*transicion a TODO*/
+		margin-bottom: 2px;
+		margin-top: 2px;
+	}
+
+	.navinicio {
+		border-radius: 0px;
+	}
+
+	.navfin {
+		border-radius: 0px;
+	}
+    
+    .tipodetalle img, .serviciodetalle img, .databasedetalle img {
+        border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+    }
+    
+	.tipodetalle, .serviciodetalle {
+		display: block;
+		width: 33%;
+		margin-bottom: 0.01em;
+		background: #FFF;
+		color: #000;
+		box-shadow: 0px 0px 0px #FFF;
+		float: right;
+		margin-left: 2px;
+	}
+
+	.tipodetalle {
+		font-family: 'Indie Flower', cursive;
+	}
+	.tipodetalle h3{
+		background-color: black;
+		color: white;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+
+	.serviciodetalle {
+		font-family: 'Pacifico', cursive;
+		margin-bottom: 1em;
+	}
+	.serviciodetalle p {
+		background-color: black;
+		color: white;
+		font-size: 0.9em;
+		font-family: 'Exo', sans-serif;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+	.databasedetalle {
+		font-family: 'Shadows Into Light', cursive;
+        display: block;
+		width: 24.42%;
+		margin-bottom: 0.01em;
+		background: #FFF;
+		color: #000;
+		box-shadow: 0px 0px 0px #FFF;
+		float: right;
+		margin-left: 4px;
+	}
+    .databasedetalle h3 {
+        background-color: cyan;
+	}
+	.databasedetalle p {
+		font-family: 'Dancing Script', cursive;
+        background-color: darkgrey;
+        color: blue;
+        text-align: justify;
+        padding: 5px 5px;
+	}
+	.databasedetalle p:hover {
+		text-transform: lowercase;
+	}
+	
+}

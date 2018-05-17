@@ -1,0 +1,255 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html, body {
+	background: #F2f2f2;
+	height: 100%;
+	font-family: arial;
+}
+
+header {
+    width: 100%; /*ancho*/
+    height: 10%; /*alto*/
+    text-align: center;
+}
+
+header h1 {
+	font-family: 'Josefin Slab';
+	color: #3220DEFF;
+	padding: 1em;
+	text-shadow: 3px 3px 4px #FFF;
+}
+
+header h1 .slogan {
+	font-size: 0.6em;
+}
+
+h2 {
+	text-align: center;
+	text-transform: uppercase;
+	/*para MAYUSCULA*/
+	font-family: 'Josefin Slab';
+}
+
+main {
+	height: 90%;
+	width: 100%;
+	margin: 0 auto;
+	background: url(../images/0018.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: inherit;
+	background-size: cover;
+	background-color: #999;
+}
+
+/*centro de pagina*/
+.centrado {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.fila {
+    width: 100%; /*ancho*/
+    height: 100%; /*alto*/
+    text-align: justify;
+}
+
+.sectform {
+	margin: 40px 40px; /*afuera*/
+	padding: 1em 1em; /*dentro*/
+}
+.cliente {
+	width: 100%; /*ancho*/
+	text-align: justify;
+	color: #527103;
+	background-color: #D7F28F;
+	margin: 20px 40px 0px 40px; /*afuera*/
+	padding: 1em 1em; /*dentro*/
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	box-sizing: border-box;
+}
+
+.cliente h2 {
+	text-shadow: 3px 3px 4px #000;
+	font-size: 2em;
+}
+.cliente input, .cliente select, .tipouser select {
+	text-align: center;
+}
+
+.actividades {
+	width: 100%;
+	background-color: #B6973E;
+	color: #000;
+	text-align: justify;
+	margin: 0px 40px 20px 40px; /*afuera*/
+	padding: 1em 1em; /*dentro*/
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	box-sizing: border-box;
+	/*FFE9A9*/
+}
+
+.btnguardar {
+	font-size: 1em;
+	background-color: #4F539C;
+	color: #FFF;
+	margin: 2px;
+	padding: 8px;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	box-sizing: border-box;
+	text-align: center;
+}
+.btnguardar span {
+	margin-right: 10px;
+}
+
+/*CENTRADO si funcionan*/
+.centerv {
+  margin-top: 25%;
+  margin-bottom: 25%;
+}
+.centerv2 {
+    display: flex;
+    align-items: center;
+}
+.centerh {
+    float: none;
+    margin: 0 auto;
+}
+
+
+.lostalleres label, .lostalleres input {
+	margin-left: 35px;
+}
+
+footer {
+	background: #000;
+	color: #CCC;
+	text-align: center;
+}
+
+footer h6 {
+	padding: 3em 0;
+	box-sizing: border-box;
+}
+
+/*Fuentes google*/
+.fuente1 {
+	font-family: 'Kavivanar', cursive;
+}
+.fuente2 {
+	font-family: 'Indie Flower', cursive;
+}
+.fuente3 {
+	font-family: 'Anton', sans-serif;
+}
+.fuente4 {
+	font-family: 'Lobster', cursive;
+}
+.fuente5 {
+	font-family: 'Pacifico', cursive;
+}
+.fuente6 {
+	font-family: 'Shadows Into Light', cursive;
+}
+.fuente7 {
+	font-family: 'Dancing Script', cursive;
+}
+.fuente8 {
+	font-family: 'Kaushan Script', cursive;
+}
+.fuente9 {
+	font-family: 'Great Vibes', cursive;
+}
+.fuente10 {
+	font-family: 'Satisfy', cursive;
+	font-family: 'Cookie', cursive;
+	font-family: 'Sacramento', cursive;
+	font-family: 'Handlee', cursive;
+	font-family: 'Jura', sans-serif;
+	font-family: 'Marck Script', cursive;
+}
+/*Colores*/
+.celeste {
+	color: #1E9E9E;
+}
+.azul {
+	color: #01579B;
+}
+.rojo {
+	color: #F84339;
+}
+.dorado{
+	color: #F5AC35;
+}
+.verde {
+	color: #109D59;
+}
+.verde2 {
+	color: #109D59;
+	border-radius: 5px;
+}
+.naranja {
+	color: #FC6C2E;
+}
+.gris {
+	color: #E0E0E0;
+}
+.gris2 {
+	color: #3B3B3B;
+}
+.amarillo {
+	color: #F3F210;
+}
+.negro {
+	color: #000000;
+}
+.negro2 {
+	color: transparent;
+}
+.verde2 {
+	color: #24E897;
+}
+.blanco {
+	color: #FFFFFF;
+}
+.naranja2 {
+	color: #EA731D;
+}
+.borde{
+	border-radius: 20px;
+	background-color: #000000;
+	color: #017CFF;
+}
+.borde2{
+	border-left-color: #000000;
+	border-left-style: dashed;
+	border-left-width: 1px;
+	border-right-color: #000000;
+	border-right-style: dashed;
+	border-right-width: 1px;
+}
+
+.borde3{
+	border-radius: 20px;
+	background-color: #000000;
+	color: #FFFFFF;
+}
+/*PARA CELULARES*/
+@media screen and (max-width: 480px){
+    
+}
+
+/*PARA TABLES 800PX*/
+@media screen and (max-width: 800px) {
+	
+}
