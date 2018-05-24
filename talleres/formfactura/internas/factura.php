@@ -54,26 +54,28 @@
                 $tipo=2;
                 break;
             default:
-                $tipo=0;
+                $tipo=3;
         }
         
         // Comprobar curso inscrito
         if (isset($registro['curso']) && !empty($registro['curso'])) {
             //Sumamos el valor del curso
-            $valor_curso += $v_curso;
-            //Nombre del curso
-            switch ($registro['curso']) {
-                case "J":
-                    $curso="JAVA";
-                    break;
-                case "P":
-                    $curso="Python";
-                    break;
-                case "A":
-                    $curso="Android";
-                    break;
-                default:
-                    $curso="ErroR Curso";
+            if ($registro['curso']!= "-"){
+                $valor_curso += $v_curso;
+                //Nombre del curso
+                switch ($registro['curso']) {
+                    case "J":
+                        $curso="JAVA";
+                        break;
+                    case "P":
+                        $curso="Python";
+                        break;
+                    case "A":
+                        $curso="Android";
+                        break;
+                    default:
+                        $curso="ErroR Curso";
+                }
             }
         }
         
@@ -144,10 +146,16 @@
                         <td class="textizq">Inscripcion</td>
                         <td class="textder"><?php echo $costo_evento ?></td>
                     </tr>
-                    <tr>
-                        <td class="textizq"><?php echo $curso ?></td>
-                        <td class="textder"><?php echo $v_curso ?></td>
-                    </tr>
+                    <?php
+                        //revisar el case de CURSO
+                        if ($curso) { ?>
+                            <tr>
+                                <td class="textizq"><?php echo $curso ?></td>
+                                <td class="textder"><?php echo $v_curso ?></td>
+                            </tr>
+                    <?php
+                        }
+                     ?>
                     <?php
                         if (!empty($talleres_array)) {
                             for ($i=0; $i < count($talleres_array); $i++) { ?>
@@ -160,16 +168,16 @@
                         }
                      ?>
                     <tr>
-                        <td class="textizq">Subtotal:</td>
-                        <td class="textizq"><?php echo $subtotal ?></td>
+                        <td class="textder fnegro blanco fuente13">Subtotal:</td>
+                        <td class="textder fblanco negro fuente13"><?php echo $subtotal ?></td>
                     </tr>
                     <tr>
-                        <td class="textizq">Descuento (<?php echo $desc[$tipo-1]*100 ?>%)</td>
-                        <td class="textizq"><?php echo $descaplicado ?></td>
+                        <td class="textder fnegro blanco fuente13">Descuento (<?php echo $desc[$tipo-1]*100 ?>%)</td>
+                        <td class="textder fblanco negro fuente13"><?php echo $descaplicado ?></td>
                     </tr>
                     <tr>
-                        <td class="textizq">Valor a pagar:</td>
-                        <td class="textizq"><?php echo $valor_pago ?></td>
+                        <td class="textder fnegro blanco fuente13">Valor a pagar:</td>
+                        <td class="textder fblanco negro fuente13"><?php echo $valor_pago ?></td>
                     </tr>
                 </table>
             </div>

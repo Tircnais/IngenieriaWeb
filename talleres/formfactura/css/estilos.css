@@ -48,6 +48,16 @@ h2 {
 main h2{
 	color: #148814;
 }
+.fila {
+    width: 100%; /*ancho*/
+    height: 100%; /*alto*/
+    text-align: justify;
+}
+
+.sectform {
+	margin: 0px 40px; /*afuera*/
+	padding: 1em 1em; /*dentro*/
+}
 .form-group label{
 	display: block;
 	padding: 1em 0 0.5em 0;
@@ -185,6 +195,13 @@ footer h6{
 }
 .fuente15 {
 	font-family: 'Marck Script', cursive;
+}
+/*Fondos*/
+.fnegro {
+    background: #000000;
+}
+.fblanco {
+    background: #FFFFFF;
 }
 
 /*Colores*/
@@ -329,6 +346,17 @@ table th, table td {
     main h2{
         color: #148814;
     }
+    .fila {
+        width: 100%; /*ancho*/
+        height: 100%; /*alto*/
+        text-align: justify;
+    }
+
+    .sectform {
+        margin: 0px 40px; /*afuera*/
+        padding: 1em 1em; /*dentro*/
+    }
+    
     .form-group label{
         display: block;
         padding: 1em 0 0.5em 0;
@@ -483,6 +511,17 @@ table th, table td {
     main h2{
         color: #148814;
     }
+    .fila {
+        width: 100%; /*ancho*/
+        height: 100%; /*alto*/
+        text-align: justify;
+    }
+
+    .sectform {
+        margin: 0px 40px; /*afuera*/
+        padding: 1em 1em; /*dentro*/
+    }
+
     .form-group label{
         display: block;
         padding: 1em 0 0.5em 0;

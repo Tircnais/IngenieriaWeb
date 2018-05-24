@@ -2,7 +2,7 @@
 	include("../dll/config.php");
 	include("../dll/mysql.php");
 	extract ($_POST);
-
+    
 	$query="INSERT INTO `registros`(`nombres`, `apellidos`, `direccion`, `correo`, `cedula`, `telefono`, `fecha_nacimiento`, `tipo`, `curso`, `taller`) VALUES ('$nombres','$apellidos','$direccion','$correo','$cedula','$telefono','$fecha_nacimiento','$tipo','$curso','$talleres[0]')";
     $result = mysqli_query($link, $query) or die('error de sql');
 
