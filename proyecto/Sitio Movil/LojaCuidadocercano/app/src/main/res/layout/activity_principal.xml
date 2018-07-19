@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ViewFlipper
+            android:id="@+id/ViewFlipper1"
+            android:layout_width="match_parent"
+            android:layout_height="160sp">
+            <ImageView
+                android:id="@+id/ImageView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/loja1"/>
+
+            <ImageView
+                android:id="@+id/ImageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/loja2"/>
+
+            <ImageView
+                android:id="@+id/ImageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/loja3"/>
+
+            <ImageView
+                android:id="@+id/ImageView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/loja4"/>
+        </ViewFlipper>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25sp"
+        android:orientation="vertical"
+        android:padding="30sp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="@dimen/botones"
+                android:layout_height="@dimen/botones"
+                android:layout_marginTop="@dimen/espaciobtn"
+                android:layout_marginBottom="@dimen/espaciobtn"
+                android:layout_marginLeft="@dimen/espaciobtn"
+                android:layout_marginRight="@dimen/espaciobtn"
+                android:id="@+id/btnInicio"
+                android:background="@drawable/btn_inicio" />
+
+            <Button
+                android:layout_width="@dimen/botones"
+                android:layout_height="@dimen/botones"
+                android:layout_marginTop="@dimen/espaciobtn"
+                android:layout_marginBottom="@dimen/espaciobtn"
+                android:layout_marginLeft="@dimen/espaciobtn"
+                android:layout_marginRight="@dimen/espaciobtn"
+                android:id="@+id/btnGestion"
+                android:background="@drawable/btn_administracion"
+                android:visibility="gone"/>
+
+            <Button
+                android:layout_width="@dimen/botones"
+                android:layout_height="@dimen/botones"
+                android:layout_marginTop="@dimen/espaciobtn"
+                android:layout_marginBottom="@dimen/espaciobtn"
+                android:layout_marginLeft="@dimen/espaciobtn"
+                android:layout_marginRight="@dimen/espaciobtn"
+                android:id="@+id/btnIR"
+                android:background="@drawable/btn_ir" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="@dimen/botones"
+                android:layout_height="@dimen/botones"
+                android:layout_marginTop="@dimen/espaciobtn"
+                android:layout_marginBottom="@dimen/espaciobtn"
+                android:layout_marginLeft="@dimen/espaciobtn"
+                android:layout_marginRight="@dimen/espaciobtn"
+                android:id="@+id/btnVisual"
+                android:background="@drawable/btn_visualizacion" />
+
+            <Button
+                android:layout_width="@dimen/botones"
+                android:layout_height="@dimen/botones"
+                android:layout_marginTop="@dimen/espaciobtn"
+                android:layout_marginBottom="@dimen/espaciobtn"
+                android:layout_marginLeft="@dimen/espaciobtn"
+                android:layout_marginRight="@dimen/espaciobtn"
+                android:id="@+id/btnNosotros"
+                android:background="@drawable/btn_nosotros" />
+
+            <Button
+                android:layout_width="@dimen/botones"
+                android:layout_height="@dimen/botones"
+                android:layout_marginTop="@dimen/espaciobtn"
+                android:layout_marginBottom="@dimen/espaciobtn"
+                android:layout_marginLeft="@dimen/espaciobtn"
+                android:layout_marginRight="@dimen/espaciobtn"
+                android:id="@+id/btnContactos"
+                android:background="@drawable/btn_contactos" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnLogin"
+            android:textColor="#42A5F5"
+            android:textSize="15sp"
+            android:background="#fccf08"
+            android:text="Marcadores"
+            android:drawableLeft="@drawable/btn_login"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

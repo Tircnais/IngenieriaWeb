@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tircnais.lojacuidadocercano">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Para cargar las URL -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /><!-- GPS -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /><!-- GPS -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="Loja, Cuidado cercano"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Splash"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Principal" />
+        <activity android:name=".Inicio" />
+        <activity android:name=".Administracion" />
+        <activity android:name=".Visualizacion" />
+        <activity android:name=".Nosotros" />
+        <activity android:name=".Contactos" />
+        <activity android:name=".Adondeir" />
+        <activity android:name=".Login" />
+    </application>
+
+</manifest>

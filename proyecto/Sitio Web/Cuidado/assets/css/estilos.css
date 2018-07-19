@@ -1,0 +1,170 @@
+.headroom {
+    background: #33F576;
+    color: #232323;
+    /*height: 15%;*/
+}
+/*boton menu*/
+.headroom .container .navbar-header {
+    background: #33F576;
+    color: #232323;
+    /*height: 15%;*/
+}
+a span {
+	margin-right: 5px;
+    box-sizing: border-box;
+}
+
+/*Logo*/
+.headroom .container .navbar-header .navbar-brand {
+    width: 15%;
+}
+.headroom .container .navbar-header .navbar-brand img{
+    width: 100%;
+}
+.headroom .container .navbar-collapse {
+    height: 15%;
+}
+
+.headroom .container .navbar-collapse ul li a {
+    /*height: 15%;*/
+}
+.secondary {
+    background: #33F576;
+    color: #232323;
+}
+/*botton menu*/
+.navbar-toogle span{
+    background: #232323;
+    color: #FFF;
+}
+
+.navbar-collapse .navbar-nav li a {
+    color: #232323;
+}
+.navbar-collapse .navbar-nav li .btn {
+    border-color: #232323;
+}
+/*
+.navbar-collapse .navbar-nav li a span {
+    margin-left: 0,2em;
+}
+*/
+/*TAMAÑO BOTNES CRUD*/
+.btn-xs-1{
+    color: #232323;
+    padding:1px 5px;
+    font-size:17px;
+    line-height:1.5;
+    border-radius:3px
+}
+
+
+.navbar-collapse .navbar-nav a {
+    color: #232323;
+}
+
+.footer1 {
+    background: #33F576;
+    color: #232323;
+}
+.footer1 a {
+    color: #232323;
+}
+.footer1 a:hover {
+    color: #FFF;
+}
+
+.footer1 .widget-title {
+    color: #FFF;
+}
+
+.footer2 {
+    background: #33F576;
+    color: #232323;
+}
+.footer2 a {
+    color: #232323;
+}
+.footer2 a:hover {
+    color: #fff;
+}
+
+
+/*COLORES*/
+/*Colores*/
+.celeste {
+	color: #1E9E9E;
+}
+.azul {
+	color: #01579B;
+}
+.rojo {
+	color: #F84339;
+}
+.dorado{
+	color: #F5AC35;
+}
+.verde {
+	color: #109D59;
+}
+.verde2 {
+	color: #109D59;
+	border-radius: 5px;
+}
+.naranja {
+	color: #FC6C2E;
+}
+.gris {
+	color: #E0E0E0;
+}
+.gris2 {
+	color: #3B3B3B;
+}
+.amarillo {
+	color: #F3F210;
+}
+.negro {
+	color: #000000;
+}
+.negro2 {
+	color: transparent;
+}
+.verde2 {
+	color: #24E897;
+}
+.blanco {
+	color: #FFFFFF;
+}
+.naranja2 {
+	color: #EA731D;
+}
+
+.fverde {
+	background: #24E897;
+}
+.fnegro {
+	background: transparent;
+    /*color: #000000;*/
+}
+
+/*Bordes*/
+.borde1{
+	border-radius: 20px;
+	background-color: #000000;
+	color: #017CFF;
+}
+.borde2{
+	border-left-color: #000000;
+	border-left-style: dashed;
+	border-left-width: 1px;
+	border-right-color: #000000;
+	border-right-style: dashed;
+	border-right-width: 1px;
+}
+
+.borde3{
+	border-radius: 20px;
+	background: #000000;
+    padding: 1em;
+    box-sizing: border-box;
+}
